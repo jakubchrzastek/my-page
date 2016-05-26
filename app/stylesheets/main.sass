@@ -1,0 +1,112 @@
+@import "foundation"
+@import url(https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext)
+@import url(https://fonts.googleapis.com/css?family=Lekton&subset=latin,latin-ext)
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=latin,latin-ext)
++foundation-everything(true)
+
+body
+	font-family: 'Lekton', sans-serif
+
+	#header
+		height: 100vh
+		background:
+			position: center center
+			image: url(images/headerbg.jpg)
+			size: cover
+		font-family: 'Lobster'
+		color: #fff
+		width: 100%
+		
+		.center-block
+			text-align: center
+			position: absolute
+			top: 50%
+			left: 15%
+			transform: translateY(-50%)
+			
+			img
+				width: 200px
+				height: 200px
+			
+			h1
+				text-transform: uppercase
+				font-size: 5rem
+				letter-spacing: 13px
+			hr 
+				width: 80%
+
+			p
+				font-size: 3rem
+
+			button
+				font-size: 1rem
+				letter-spacing: 2px
+				font-family: 'Lekton', sans-serif
+
+	#aboutme
+		padding-top: 20px
+
+		img
+			width: 300px
+
+		p 	
+			padding-top: 40px
+			padding-left: 40px
+			text-transform: uppercase
+			letter-spacing: 1px
+			font-size: 1.3rem
+			font-family: 'Open Sans Condensed', sans-serif
+	#skills
+		padding: 20px
+		background: rgba(249,250,251,.3)
+		border-top: 1px solid #dae1e7
+		border-bottom: 1px solid #dae1e7
+		h3
+			font-size: 2.5rem
+			font-family: 'Lobster'
+			color: #ec5840
+			clear: both
+		
+		hr
+		i 	
+			opacity: 0.7
+			font-size: 120px
+			padding: 60px
+			float: left
+			&:hover
+				opacity: 1
+				cursor: pointer
+
+	#project
+		padding: 20px
+
+		h3
+			font-size: 2.5rem
+			font-family: 'Lobster'
+			color: #ec5840
+			clear: both
+		img
+			position: relative
+			padding: 10px
+			-webkit-filter: grayscale(100%)
+			filter: greyscale(100%)
+			
+			&:hover
+				cursor: pointer
+				filter: none
+		p
+			position: absolute 
+			top: 20px
+			left: 20px
+
+
+
+	#menu
+		.menu__button
+			position: fixed
+			width: 30px 
+			height: 30px
+			background: red
+			z-index: 999999
+			top: 50px
+			left: 50px 
