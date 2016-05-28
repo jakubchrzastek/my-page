@@ -28,11 +28,10 @@ gulp.task("sass", function () {
       includePaths: ['node_modules/foundation-sites/scss']
     }).on('error', sass.logError))
     .pipe(plumber())
-    .pipe(sass())
     .pipe(autoprefixer({
-      browsers: ['last 2 versions'],
-      cascade: false
+      browsers: ['> 1%', 'IE >= 9']
     }))
+    .pipe(plumber.stop())
     .pipe(gulp.dest("./public/"));
 });
 
