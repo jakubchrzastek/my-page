@@ -26,4 +26,9 @@ $('a').click(function(){
     return false;
 });
 
+$(window).scroll(function(){
+    var top = $(document).scrollTop();
+    $('#header .center-block')
+        .css({"opacity": 150-top, "transition": "all .5s ease"});
+});
 });

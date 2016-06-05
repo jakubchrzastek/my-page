@@ -3764,17 +3764,17 @@ table.hover tr:nth-of-type(even):hover {
 body {
   font-family: 'Lekton', sans-serif;
   background: rgba(249, 250, 251, 0.3);
-  right: 0;
-  overflow-x: hidden;
   position: relative;
   -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+  right: 0; }
   body .block--style {
-    padding: 100px 0; }
+    padding: 60px 0; }
     body .block--style h3 {
       font-size: 2.5rem;
       font-family: 'Lobster';
-      color: #ec5840; }
+      color: #ec5840;
+      padding: 1.2rem 0; }
   body #header {
     height: 100vh;
     width: 100%;
@@ -3789,29 +3789,34 @@ body {
       left: 50%;
       -webkit-transform: translateY(-50%) translateX(-50%);
           -ms-transform: translateY(-50%) translateX(-50%);
-              transform: translateY(-50%) translateX(-50%); }
+              transform: translateY(-50%) translateX(-50%);
+      padding: 1.2rem; }
       body #header .center-block img {
         width: 200px;
         height: 200px; }
       body #header .center-block h1 {
         text-transform: uppercase;
-        font-size: 3.2rem;
+        font-size: 3rem;
         letter-spacing: 10px; }
+        @media (max-width: 460px) {
+          body #header .center-block h1 {
+            font-size: 2.4rem; } }
       body #header .center-block hr {
         width: 80%; }
       body #header .center-block p {
         font-size: 3rem; }
+        @media (max-width: 460px) {
+          body #header .center-block p {
+            font-size: 2rem; } }
       body #header .center-block button {
         font-size: 1rem;
         letter-spacing: 2px;
         font-family: 'Lekton', sans-serif; }
       @media (max-width: 640px) {
         body #header .center-block {
-          padding: 20px; } }
-  body #aboutme img {
-    padding: 0px 40px; }
+          padding: 1.2rem; } }
   body #aboutme p {
-    padding-top: 3rem;
+    padding-top: 1rem;
     padding-left: 3rem;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -3824,34 +3829,58 @@ body {
     body #aboutme p {
       padding: 2rem; } }
   body #skills {
-    background: rgba(249, 250, 251, 0.9);
-    border-top: 1px solid #dae1e7;
-    border-bottom: 1px solid #dae1e7; }
+    background: #dae1e7;
+    border-top: 1px solid #9cafbf;
+    border-bottom: 1px solid #9cafbf; }
+    body #skills img {
+      width: 12rem;
+      padding: 2rem;
+      display: inline-block;
+      -webkit-filter: grayscale(100%);
+              filter: grayscale(100%); }
+      @media (max-width: 1200px) {
+        body #skills img {
+          width: 8rem;
+          padding: 1.1rem; } }
+      body #skills img:hover {
+        cursor: pointer;
+        -webkit-filter: grayscale(0%);
+                filter: grayscale(0%); }
     body #skills i {
-      opacity: 0.7;
-      font-size: 120px;
-      padding: 60px;
-      float: left; }
+      font-size: 8rem;
+      padding: 2rem;
+      display: inline-block;
+      -webkit-filter: grayscale(100%);
+              filter: grayscale(100%); }
+      @media (max-width: 1200px) {
+        body #skills i {
+          font-size: 4.4rem; } }
       body #skills i:hover {
-        opacity: 1;
-        cursor: pointer; }
+        cursor: pointer;
+        -webkit-filter: grayscale(0%);
+                filter: grayscale(0%); }
+      @media (max-width: 900px) {
+        body #skills i {
+          padding: 1rem; } }
   body #project img {
     position: relative;
-    padding: .5rem;
-    float: left;
-    padding: 2rem; }
+    padding: 2rem;
+    display: inline-block; }
+    body #project img:before {
+      content: "";
+      display: block;
+      width: 20px;
+      height: 20px;
+      background: #000000; }
     body #project img:hover {
       cursor: pointer; }
   body #hire {
-    padding: 60px 0;
+    padding: 20px 10px;
     background: #ec5840;
     border-top: 2px solid #D4513B;
     border-bottom: 2px solid #D4513B; }
-    body #hire h3 {
-      color: #ffffff;
-      font-family: 'Lobster';
-      font-size: 3rem;
-      padding: 0 10px; }
+    body #hire i {
+      color: #ffffff; }
   body #contact {
     border-top: 2px solid #D4513B;
     background: #ec5840; }
@@ -3861,15 +3890,30 @@ body {
       font-family: 'Lobster';
       color: #ffffff; }
     body #contact p {
-      padding-top: 40px;
-      padding-left: 40px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
+      padding-top: 2rem;
+      letter-spacing: 3px;
       font-size: 1.3rem;
       font-family: 'Open Sans Condensed', sans-serif; }
+      body #contact p:nth-child(2) {
+        cursor: pointer; }
+        body #contact p:nth-child(2):hover {
+          color: #861e0d; }
+    body #contact hr {
+      width: 20%; }
+    body #contact a {
+      font-size: 2rem;
+      color: #ffffff;
+      font-family: 'Open Sans Condensed', sans-serif; }
+      body #contact a:hover {
+        color: #861e0d; }
+      body #contact a i {
+        padding: 0 20px;
+        color: #ffffff; }
+        body #contact a i:hover {
+          color: #861e0d; }
   body .menu__button {
     position: fixed;
-    width: 50px;
+    width: 52px;
     height: 45px;
     color: #ffffff;
     background: #333333;
@@ -3883,10 +3927,10 @@ body {
       display: block;
       position: absolute;
       height: 6px;
-      width: 80%;
+      width: 45px;
       background: #ffffff;
       opacity: 1;
-      margin: 3px 5px;
+      margin: 4px 3px;
       -webkit-transition: all 0.3s ease;
       transition: all 0.3s ease; }
       body .menu__button span:nth-child(1) {
@@ -3894,7 +3938,7 @@ body {
       body .menu__button span:nth-child(2) {
         top: 15px; }
       body .menu__button span:nth-child(3) {
-        top: 29px; }
+        top: 28px; }
     body .menu__button:hover {
       cursor: pointer; }
   body .menu__button--open {

@@ -2,11 +2,11 @@
 html(lang="en")
 head
 	meta(charset="UTF-8")
-	meta(name="viewport", content="width=device-width, initial-scale=1.0")
+	meta(name="viewport" content="width=device-width, initial-scale=1.0")
 	title Jakub Chrząstek - Junior FrontEnd Developer - Wrocław
 	link(rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css")
-	link(rel="stylesheet", href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css")
-	link(rel="stylesheet", href="main.css")
+	link(rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css")
+	link(rel="stylesheet" href="main.css")
 	script(type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js")
 	script(type="text/javascript" src="main.js")
 
@@ -44,12 +44,12 @@ body#top
 
 	section#aboutme.block--style
 		.row
-			.medium-12.small-12
+			.medium-12.small-12.columns
 				h3.text-center 
 					| Hello!
-			.medium-4.small-12
+			.medium-6.small-12.columns
 				img(src="/images/portret.png")
-			.medium-8.small-12
+			.medium-6.small-12.columns
 				p  
 					| Jakub chrząstek, 22-year-old junior front end developer from Wroclaw, Poland.
 					br
@@ -62,71 +62,76 @@ body#top
 					| In addition ambitious and full of energy to create new intresting websites project are his strong point.
 					br
 					| In his free time perpetuates moments in photos.
-	
-	section#hire
-		.row
-			.medium-12
-				h3.text-center
-					| I am looking for a job, hire me!
 				
 	section#skills.block--style
 		.row
-			.medium-12
+			.medium-12.columns
 				h3.text-center 
 					| Practical Skills 
 				.row
-					.medium-3.small-6
+					.medium-3.small-4.columns
 						i(class="devicon-html5-plain-wordmark colored")
-					.medium-3.small-6
+					.medium-3.small-4.columns
 						i(class="devicon-sass-original colored")
-					.medium-3.small-6
+					.medium-3.small-4.columns
 						i(class="devicon-less-plain-wordmark colored")
-					.medium-3.small-6
-						i(class="devicon-javascript-plain colored")
-					.medium-3.small-6
+					.medium-3.small-4.columns
+						img(src="/images/jade.png", alt="jade")
+					.medium-3.small-4.columns
+						img(src="/images/javascript.png", alt="jade")
+					.medium-3.small-4.columns
 						i(class="devicon-jquery-plain-wordmark colored")
-					.medium-3.small-6
+					.medium-3.small-4.columns
 						i(class="devicon-angularjs-plain colored")
-					.medium-3.small-6
+					.medium-3.small-4.columns
 						i(class="devicon-bootstrap-plain-wordmark colored")
-					.medium-3.small-6
+					.medium-3.small-4.columns
 						i(class="devicon-foundation-plain-wordmark colored")
-					.medium-3.small-6
+					.medium-3.small-4.columns
 						i(class="devicon-bower-plain-wordmark colored")
-					.medium-3.small-6
+					.medium-3.small-4.columns
 						i(class="devicon-gulp-plain colored")
-					.medium-3.small-6
+					.medium-3.small-4.columns
 						i(class="devicon-git-plain-wordmark colored")
 				h3.text-center 
 					| To learn in the future...
 				.row
-					.medium-3.small-6
+					.medium-3.small-4.columns
 						i(class="devicon-nodejs-plain colored")
-					.medium-3.small-6
+					.medium-3.small-4.columns
 						i(class="devicon-rails-plain-wordmark colored")
-
 
 	section#project.block--style
 		.row
-			.medium-12.small-12
+			.medium-12.small-12.columns
 				h3.text-center 
 					| Last Projects
 				.row
-					.medium-6.small-12
-						img(src="/images/p3.jpg", alt="")
-					.medium-6.small-12
-						img(src="/images/p4.jpg", alt="")
-					.medium-6.small-12
-						img(src="/images/p2.jpg", alt="")
-					.medium-6.small-12
-						img(src="/images/p1.jpg", alt="")
+					.medium-4.small-12.columns
+						img(src="/images/p4.jpg", alt="SPA Aplication")
+					.medium-4.small-12.columns
+						img(src="/images/p3.jpg", alt="PG Construction")
+					.medium-4.small-12.columns
+						img(src="/images/p2.jpg", alt="Portfolio website")
+					.medium-4.small-12.columns
+						img(src="/images/p1.jpg", alt="WaldiZnicze")
 	
 	section#contact.block--style
 		.row
-			.medium-12.small-12
+			.medium-12.small-12.columns
 				h3.text-center 
 					| Contact with me!
 					p
-						| Jakub Chrząstek
+						| JAKUB CHRZĄSTEK
 						br
-						| 535-072-224
+						| +48 535 072 224
+						br
+						| WROCŁAW
+					a(href="mailto:hello@jakubchrzastek.pl")
+						| 
+						b hello@jakubchrzastek.pl
+					hr
+					a(href="https://pl.linkedin.com/in/jakubchrzastek")
+						i(class="fa fa-linkedin")
+					a(href="https://github.com/jakubchrzastek")
+						i(class="fa fa-github")
